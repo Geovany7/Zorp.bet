@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Do Bicho</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/src/img/veado.png" type="image/x-icon">
+</head>
+
+<body id="corpo">
+    <header id="partHeader">
+        <div id="infoLeft">
+            <h2 class="titleOfHeader"><a href="/paginaInicial/index.html"><b class="markOrange">Z</b>orp.<b class="emberInBack">b</b>et</a></h2>
+            <h2 class="titleOfHeader" id="jogoApi">Jogos</h2>
+            <h2 class="titleOfHeader" id="sobersa"><a href="#sobreNos">Sobre Nos</a></h2>
+        </div>
+        <h1 class="titleOfHeader" id="titleMain"><b class="markOrange">J</b>o<b class="markOrange">g</b>o Da <b
+                class="emberInBack">B</b>icha</h1>
+        <div id="login">
+            <h2 id="linksForLogan"><b class="markOrange" id="log">Entrar</b> ou <b class="markOrange"
+                    id="cadas">Cadastrar?</b></h2>
+            <img id="userIcon" src="/src/img/R.png" alt="user icon">
+        </div>
+    </header>
+
+    <div id="gamesDiv">
+        <a href="/jogoDoBicho/jogoDoBicho.html">
+            <div class="localGames">
+                <img class="imgGames" src="/src/img/veado.png" alt="veado">
+                <p class="nameGames">Jogo Da Bicha</p>
+            </div>
+        </a>
+        <a href="/bobFortune/cacaNiquel.html">
+            <div class="localGames">
+
+                <img class="imgGames" src="/src/img/BOBESPONJAGRANDE.png" alt="bobFortune">
+                <p class="nameGames">Bob Fortune</p>
+            </div>
+        </a>
+        <a href="/lotoFacil/lotoFacil.html">
+            <div class="localGames">
+                <img class="imgGames" src="/src/img/logo-lotofaci.webp" alt="loto Facil">
+                <p class="nameGames">Loto Facil</p>
+            </div>
+        </a>
+        <a href="/roletaDoZaza/roletaZaza.html">
+            <div class="localGames">
+                <img class="imgGames" src="/src/img/raposo.png" alt="raposo">
+                <p class="nameGames">Roleta Do Raposo</p>
+            </div>
+        </a>
+    </div>
+    <main>
+        <div id="jogoDoBicho">
+            <!--
+        <div class="groupAnimal">
+            <img class="imageAnimal" src="src/img/avestruz.png" alt="avestruz">
+            <p class="nameAnimal">Avestruz</p>
+        </div>
+        
+        -->
+
+        </div>
+
+        <div id="prize">
+            <h2>Prêmios</h2>
+            <ul id="listPrize">
+                <li>
+                    <input type="radio" value="0" name="prize" id="onePrize">
+                    <label for="">1º Prêmio</label>
+                </li>
+                <li>
+                    <input type="radio" value="1" name="prize" id="twoPrize">
+                    <label for="">2º Prêmio</label>
+                </li>
+                <li>
+                    <input type="radio" value="2" name="prize" id="threePrize">
+                    <label for="">3º Prêmio</label>
+                </li>
+                <li>
+                    <input type="radio" value="3" name="prize" id="fourPrize">
+                    <label for="">4º Prêmio</label>
+                </li>
+                <li>
+                    <input type="radio" value="4" name="prize" id="fivePrize">
+                    <label for="">5º Prêmio</label>
+                </li>
+                <li>
+                    <input type="radio" value="premioTodos" name="prize" checked id="everyPrize">
+                    <label for="">Todos os Prêmio</label>
+                </li>
+            </ul>
+            <button type="button" id="betAnimal">POCAR</button>
+        </div>
+        <a href="" class="linkImagem linkImagem2" target="_blank">
+            <img class="imagemLado" src="/src/img/sexOfPelotaLado1.png" alt="sexOfPelotaLado1"></a>
+    </main>
+
+    <div id="oQueVocêGanhou">
+        <div id="informacaoPremio">
+            <img src="/src/img/veado.png" alt="veado">
+            <div>
+                <h2>Hola Pobre, quero dizer amigo</h2>
+                <p id="msgGanhador"></p>
+                <p>Você deve ter amado esse prêmio, eu espero que sim kkkkkk</p>
+                <p>Assinado <b class="markOrange">Veado</b></p>
+            </div>
+        </div>
+        <div id="fundoOQueVocêGanhou"></div>
+    </div>
+
+    <script type="module" src="jogoDoBicho.js"></script>
+</body>
+
+</html>

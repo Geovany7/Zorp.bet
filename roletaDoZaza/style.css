@@ -1,0 +1,1020 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: blueviolet;
+}
+
+
+#partHeader {
+    background: rgb(75, 0, 130);
+    background: linear-gradient(90deg, rgba(75, 0, 130, 1) 21%, rgba(106, 13, 173, 1) 100%);
+    
+   
+    color: white;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#infoLeft{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.titleOfHeader {
+    font-family: "Inter", sans-serif;
+    font-size: 3lvb;
+    font-weight: 800;
+    font-style: italic;
+    
+    border-right: solid;
+    padding: 4.6%;
+}
+
+.titleOfHeader a{
+    color: white;
+}
+#titleMain{
+    padding: 0;
+    border-right: none;
+    font-size: 4lvb;
+    font-style: normal;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    pointer-events: none;
+}
+.markOrange {
+    color: #E37436;
+    font-weight: 800;
+
+}
+
+.emberInBack {
+
+    background: url(/src/img/fogo\ 24.png) center center no-repeat;
+    background-size: 140%;
+
+    font-style: italic;
+}
+
+#login {
+    height: 100%;
+    width: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+  
+}
+
+#log, #cadas{
+    cursor: pointer;
+}
+
+#linksForLogan {
+    margin-right: 3%;
+    font-size: 2.6lvb;
+}
+
+#linksForLogan a {
+    color: #E37436;
+    text-decoration: none;
+
+}
+
+#userIcon {
+    height: 4lvb;
+    background-color: #E37436;
+    padding: 7% 3%;
+    
+}
+
+#jogoApi{
+    cursor: pointer;
+}
+
+main{
+    position: relative;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.linkImagem{
+    position: absolute;
+    height: 100%;
+    left: 4%;
+}
+
+.linkImagem2{
+    left: auto;
+    right: 4%;
+}
+
+.imagemLado{
+    height: 100%;
+}
+
+.folha {
+    position: relative;
+    background-color: blueviolet;
+    width: 65lvb;
+    height: 65lvb;
+    padding: 1%;
+}
+
+.roleta {
+    border: 1lvb solid #FFF;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    /*    animation: roleta 5s linear infinite;*/
+}
+
+path {
+    fill: transparent;
+}
+
+.seta {
+    position: absolute;
+    left: 48.5%;
+    border-bottom: 0px solid transparent;
+    border-left: 3lvb solid transparent;
+    border-right: 3lvb solid transparent;
+    border-top: 5lvb solid #33c9dc;
+    width: 0;
+    height: 0;
+    z-index: 999;
+    animation: animacaoSeta .35s linear infinite;
+}
+
+.box1,
+
+.box2,
+
+.box3,
+
+.box4,
+
+.box5,
+
+.box6,
+
+.box7,
+
+.box8 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 16.31lvb solid;
+}
+
+.box1 {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #f6685e;
+    border-left-color: #f6685e;
+}
+
+.box5 {
+    border-top-color: #e91e63;
+    border-right-color: #e91e63;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.box2 {
+    border-top-color: #9c27b0;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #9c27b0;
+    left: 50%;
+    
+}
+
+.box6 {
+    border-top-color: transparent;
+    border-right-color: #673ab7;
+    border-bottom-color: #673ab7;
+    border-left-color: transparent;
+    left: 50%
+}
+
+.box4 {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color:  #2196f3;
+    border-left-color:  #2196f3;
+    top: 50%;
+    left: 50%;
+}
+
+.box8 {
+    border-top-color:#34399d;
+    border-right-color: #34399d;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    top: 50%;
+    left: 50%;
+}
+
+.box3 {
+    border-top-color: #009688;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #009688;
+    top: 50%;
+}
+
+.box7 {
+    border-top-color: transparent;
+    border-right-color: #ffeb3b;
+    border-bottom-color: #ffeb3b;
+    border-left-color: transparent;
+    top: 50%;
+}
+
+@keyframes roleta {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes animacaoSeta {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    25% {
+        transform: rotate(-15deg)
+    }
+
+    75% {
+        transform: rotate(15deg)
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
+
+.premio {
+    position: absolute;
+    z-index: 999;
+    font-size: 3lvb;
+    font-weight: bold;
+    color: white;
+}
+
+.premio1 {
+    top: 34%;
+    left: 9%;
+    transform: rotate(25deg);
+}
+
+.premio2 {
+    top: 15%;
+    left: 28%;
+    transform: rotate(69deg);
+}
+
+.premio3 {
+    top: 15%;
+    left: 55%;
+    transform: rotate(115deg);
+}
+
+.premio4 {
+    top: 35%;
+    right: 7%;
+    transform: rotate(150deg);
+}
+
+.premio5 {
+    top: 60%;
+    right: 10%;
+    transform: rotate(200deg);
+}
+
+.premio6 {
+    top: 79%;
+    right: 29%;
+    transform: rotate(250deg);
+}
+
+.premio7 {
+    top: 79%;
+    left: 31%;
+    transform: rotate(296deg);
+}
+
+.premio8 {
+    top: 60%;
+    left: 10%;
+    transform: rotate(333deg);
+}
+
+.btnRoleta {
+    position: absolute;
+    color: white;
+    background-color: #000;
+    border: 1.6lvb solid #000;
+    cursor: pointer;
+    top: 45%;
+    left: 45%;
+    font-size: 4lvb;
+    border-radius: 50%;
+    height: 4lvb;
+    width: 4lvb;
+    text-align: center;
+}
+
+.play {
+    z-index: 999;
+}
+
+.stop {
+    /*    visibility: hidden;*/
+    animation-play-state: paused;
+}
+
+
+#gamesDiv{
+    display: none;
+    grid-template-columns: 22% 22% 22% 22%;
+    width: 50%;
+    /* height: 10%; */
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25%;
+    background-color: #471E67;
+}
+
+#gamesDiv a{
+    height: 70%;
+    text-decoration: none;
+    color: white;
+
+}
+
+#gamesDiv div{
+    padding: 4%;
+    font-size: 2lvb;
+    cursor: pointer;
+    height: 92%;
+    background-color: #E37436;
+    color: white;
+    border: solid #E37436;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gamesDiv img{
+    height: 90%;
+    width: 90%;
+}
+
+#gamesDiv h2{
+    margin-bottom: 1%;
+}
+
+#gamesDiv h3{
+    margin: 4% 0;
+    padding: 4% 0;
+    padding-left: 4%;
+    cursor: pointer;
+    background-color: dimgray;
+}
+
+#gamesDiv hr{
+    margin: 4% 0;
+}
+
+#gamesDiv h3:hover{
+    background-color: #E37436;
+}
+
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    flex-direction: column;
+  
+}
+
+footer a{
+    width: 50%;
+    margin-bottom: 2%;
+}
+.anuncioBaixo{
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+#sobreNos{
+    width: -webkit-fill-available;
+    background-color: black;
+    color: white;
+    padding: 2% 6%;
+    padding-bottom: 6%;
+}
+
+#sobreNos h2{
+    font-size: 4lvb;
+    margin-bottom: 2%;
+    color: #E37436;
+}
+
+#sobreNos img{
+    width: 10%;
+    border-radius: 50%;
+}
+
+#sobre{
+    display: flex;
+    align-items: center;
+}
+
+#sobre p {
+    font-size: 2.2lvb;
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 2%;
+    
+}
+
+#cadastor, #logan{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    display: none;
+    justify-content: center;
+    z-index: 1000;
+    top: 0;
+}
+
+#parteCadar{
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+   
+    height: 70%;
+}
+
+#imgSuperSam{
+    height: 100%;
+    width: 50%;
+}
+#informacaoUsuario, #informacaoUsuarioLogin{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background: rgb(75, 0, 130);
+    background: linear-gradient(90deg, rgba(75, 0, 130, 1) 21%, rgba(106, 13, 173, 1) 100%);
+    height: 100%;
+    align-items: center;
+}
+
+.titleCadastor{
+    margin-top: 8%;
+    font-size: 4lvb;
+    font-size: 800;
+    color: white;
+}
+
+.subtitleCadasto{
+    margin-top: 3%;
+    font-size: 3lvb;
+    margin-bottom: 1%;
+    color: #E37436;
+}
+
+#informacaoUsuario input, #informacaoUsuarioLogin input{
+    padding: 2%;
+    width: 80%;
+    margin-top: 3%;
+    font-size: 2lvb;
+    margin-bottom: 2%;
+}
+
+#informacaoUsuario input::placeholder, #informacaoUsuarioLogin input::placeholder{
+    font-size: 2lvb;
+}
+
+#informacaoUsuario hr, #informacaoUsuarioLogin hr{
+    width: 90%;
+    margin-top: 2%;
+    
+    border: white 1px solid;
+}
+
+.termosText{
+    text-align: justify;
+    margin-top: 2%;
+    width: 83%;
+    color: white;
+    font-size: 1.7lvb;
+    cursor: default;
+}
+
+#informacaoUsuario button, #informacaoUsuarioLogin button{
+    padding: 3% 4%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    cursor: pointer;
+    color: white;
+    font-size: 2lvb;
+    background: coral;
+    border: solid coral;
+}
+
+.jaTem{
+    color: white;
+    text-align: center;
+    font-size: 1.7lvb;
+    cursor: default;
+}
+
+.closerX{
+    width: 4lvb;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+}
+
+a{
+    color: #E37436;
+    text-decoration: none;
+}
+
+.fundo{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+
+
+#informacaoUsuarioLogin{
+    height: auto;
+    width: 26%;
+    position: absolute;
+    z-index: 1000;
+    padding: 5% 0;
+    padding-top: 2%;
+    background: url(/src/img/white\ pink.png) no-repeat;
+    background-size: cover;
+}
+
+.cadastraLogan{
+    cursor: pointer;
+}
+
+#oQueVocêGanhou{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1001;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#informacaoPremio{
+    display: flex;
+    width: 40%;
+    background-color: #9c27b0;
+    padding: 2%;
+    border-radius: 12px;
+    justify-content: space-between;
+}
+
+#informacaoPremio div{
+    width: 50%;
+}
+
+#informacaoPremio div h2{
+    margin-bottom: 4%;
+}
+
+#informacaoPremio div p{
+font-size: 2lvb;
+    color: white;
+    margin-top: 2%;
+}
+#informacaoPremio img{
+    width: 40%;
+}
+
+#fundoOQueVocêGanhou{
+    background-color: #000;
+    z-index: -1;
+    opacity: 0.9;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+@media (max-width: 1025px){
+    html{
+        height: 100%;
+    }
+    body{
+     
+        justify-content: space-between;
+    }
+
+    #backAll{
+        height: 100%;
+        position: fixed; 
+    }
+
+    #infoLeft{
+        width: 45%;
+    }
+
+    #titleMain {
+        font-size: 2lvb;
+        text-align: right;
+        width: 69%;
+    }
+
+    .titleOfHeader{
+        font-size: 2lvb;
+        padding: 4.6% 3.6%;
+
+    }
+
+    #login{
+        width: 40%;
+    }
+    #linksForLogan{
+        font-size: 1.7lvb;
+    }
+    #userIcon{
+        height: 4lvb;
+        padding: 3% 2%;
+    }
+
+    #gamesDiv{
+    
+        width: 80%;
+        padding: 0px 10%;
+    }
+    #gamesDiv a {
+        height: 80%;
+    }    
+    #gamesDiv img {
+        height: 80%;
+        width: 80%;
+    }
+    main, #parteCadar{
+        height: 40%;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+    }
+
+    .linkImagem{
+        display: none;
+    }
+    .partLotoFacilUp{
+        width: 71%;
+    }
+    #mainLotoFacil{
+        width: 70%;
+    }
+
+
+#divButton {
+    width: 75.5%;
+    padding-bottom: 1%;
+
+}
+    #partMain {
+        margin-top: 4%;
+    }
+
+    #giraOsNumeros {
+        font-size: 2lvb;
+    }
+
+    
+    
+
+   
+    
+    
+    
+    #listPrize li {
+        font-size: 2lvb;
+    }
+
+    #betAnimal {
+        font-size: 1.3lvb;
+    }
+    #partaskdksal div h2{
+        font-size: 2.2lvb;
+    }
+
+    #partaskdksal div h3{
+        font-size: 1.7lvb;
+    }
+
+    #partaskdksal div button {
+        font-size: 1.4lvb;
+    }
+
+    #partaskdksal div p{
+        font-size: 1.2lvb;
+    }
+
+    .nameGames{
+        font-size: 1.6lvb;
+    }
+
+    #sobreNos h2 {
+        font-size: 2.7lvb;
+    }
+
+    #sobre p {
+        font-size: 1.4lvb;
+    }
+
+    #informacaoUsuarioLogin{
+        width: 40%;
+    }
+
+    .titleCadastor{
+        font-size: 3lvb;
+    }
+
+    .subtitleCadasto{
+        font-size: 2lvb;
+    }
+
+    #informacaoUsuario input, #informacaoUsuarioLogin input,
+    #informacaoUsuario input::placeholder, #informacaoUsuarioLogin input::placeholder{
+        font-size: 1lvb;
+    }
+
+    .termosText{
+        font-size: 1.2lvb;
+    }
+
+    #informacaoUsuario button, #informacaoUsuarioLogin button{
+        font-size: 1.4lvb;
+    }
+
+    .jaTem{
+        font-size: 1.1lvb;
+        margin-top: 2%;
+    }
+    .closerX {
+        width: 3lvb;
+    }
+    #sobreNos img{
+        width: 20%;
+    }
+
+    #informacaoPremio{
+        width: 60%;
+    }
+}
+
+@media (max-width: 820px){
+    html{
+        height: 100%;
+    }
+
+    body{
+        flex-direction: column;
+        display: flex;
+        height: 100%;
+        justify-content: space-between;
+    }
+    
+    #titleMain{
+        font-size: 2.1lvb; 
+        width: 75%;
+    }
+
+    main{
+        height: 60%;
+    }
+    .titleOfHeader{
+        font-size: 1.7lvb;
+    }
+    #login {
+        width: 20%;
+    }
+
+    #linksForLogan {
+        margin-right: 7%;
+    }
+    #sobre p {
+        font-size: 1.1lvb;
+    }
+
+    #userIcon{
+        padding: 3% 2%;
+    }
+
+    #partMain {
+        margin-top: 1%;
+    }
+
+    .folha {
+        width: 50lvb;
+        height: 50lvb;
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+        border-width: 13.31lvb ;
+    }
+
+ 
+
+
+    .premio{
+        font-size: 2.3lvb;
+
+    }
+    #informacaoPremio{
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px){
+    #sobersa{
+        display: none;
+    }
+
+    #titleMain {
+        font-size: 1.7lvb;
+        width: 70%;
+    }
+
+    #login{
+        width: 17%;
+        
+    }
+    #parteCadar {
+        height: 36%;
+        width: 90%;
+    }
+
+    #linksForLogan { 
+        margin-right: 12%;
+        font-size: 1.5lvb;
+
+    }
+
+    #gamesDiv {
+        width: 95%;
+        padding: 0px 2.5%;
+    }
+
+    .nameGames {
+        font-size: 1.1lvb;
+    }
+    main {
+        height: -webkit-fill-available;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #lugarDoCacaNiquel {
+        width: 60%;
+    }
+
+    #partMain {
+        margin-top: 4%;
+    }
+
+    #giraOsNumeros {
+        padding: 2% 3%;
+        margin-top: 5%;
+    }
+
+    #giraOsNumeros:hover{
+        margin-top: 4.9%; 
+        padding: 2.1% 3.1%;
+    }
+
+    #divButton {
+        width: 87%; 
+    }   
+
+    .partLotoFacilUp {
+        width: 81%;
+    }
+
+    #meioPrincipal {
+        width: 94%;
+    }
+
+    #mainLotoFacil {
+        width: 80%;
+    }
+
+    .buttonLoto {
+        padding: 1.2lvb 1.1lvb;
+    }
+
+    #mainLotoFacil {
+
+        grid-template-columns: 14% 14% 14% 14% 14%;
+    }
+    .imagemLado {
+      
+        display: none;
+    }
+    footer a {
+        width: 70%;
+        margin-bottom: 8%;
+    }
+
+    #sobreNos img {
+        width: 35%;
+    }
+
+    #informacaoUsuarioLogin {
+        width: 60%;
+    }
+
+    .folha {
+        width: 35lvb;
+        height: 35lvb;
+    }
+
+    .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8 {
+        border-width: 9.31lvb ;
+    }
+
+ 
+
+
+    .premio{
+        font-size: 2lvb;
+    }
+
+    .premio4 {
+        font-size: 1.5lvb;
+    }
+
+    .seta {
+        
+        left: 44.5%;
+    }
+
+    .btnRoleta {
+        top: 40%;
+        left: 42%;
+    }
+
+    #informacaoPremio{
+        width: 90%;
+    }
+
+    #informacaoPremio div h2{
+        font-size: 2lvb;
+    }
+
+    #informacaoPremio div p{
+        font-size: 1.7lvb;
+    }
+}
